@@ -23,6 +23,7 @@ namespace VTigerAutomation.Generic
         public static ExtentReports extentReports = new ExtentReports();
         public ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(htmlReportPath);
         public static ExtentTest extentTest = extentReports.CreateTest(MethodBase.GetCurrentMethod().Name);
+       // public static ExtentTest extentTest = extentReports.CreateTest(TestContext.TestName);
 
         public void extentreportmethod(string url)
         {

@@ -19,13 +19,14 @@ namespace AutomationProject.Generic
         public static ExtendReportUtility extendReportUtility = new ExtendReportUtility();
         public string ScreenShotPath;
         public static IWebDriver driver;
-       /*public TestContext testContext;
+       // public static ExtentTest extentTest;
+        /*public TestContext testContext;
 
-        public TestContext TestContext
-        {
-            get { return testContext; }
-            set { testContext = value; }
-        }*/
+         public TestContext TestContext
+         {
+             get { return testContext; }
+             set { testContext = value; }
+         }*/
 
         [AssemblyInitialize]
         public static void AssemblyIntitial(TestContext context)
@@ -53,7 +54,7 @@ namespace AutomationProject.Generic
                 webDriverUtility.Maximize(driver);
                 webDriverUtility.ImplicitWait(driver);
                 ScreenShotPath = "C:\\Users\\LENOVO\\source\\repos\\BankingProjectPrac\\AutomationProject\\Generic\\ScreenShots\\ss.png";
-                // extentTest = extentReports.CreateTest(testContext.TestName);
+               // extentTest = extentReports.CreateTest(testContext.TestName);
 
             
         }
